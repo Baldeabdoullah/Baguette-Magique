@@ -1,0 +1,919 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+  
+   
+}
+
+
+html, body {
+
+    position: relative;
+    height: 100%;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    /* overflow-x: hidden; */
+    
+  
+}
+
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+
+}
+
+h2 {
+    font-family: 'Courgette', cursive;
+
+}
+
+h3 {
+
+    font-family: 'Courgette', cursive
+
+}
+
+p {
+    font-family: 'Cookie', cursive
+
+}
+header {
+    width: 100%;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    position: absolute;
+    z-index: 99;
+    transition: 0.4s ease-in;
+}
+
+.nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.nav.fixed .container h1 a {
+    color: #000;
+
+}
+
+.nav.fixed .container .menu-items li a {
+    color: #000;
+}
+
+.container {
+    display: flex;
+   align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+    
+}
+
+.container h1 {
+    padding: 5px 5px;
+
+}
+
+.container h1 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    transition: 0.4s;
+   
+
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  
+}
+
+.menu-items li {
+    list-style-type: none;
+
+}
+
+.menu-items li a {
+    
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+font-family: 'Roboto', sans-serif;
+font-weight: 600;
+}
+
+.menu-button {
+    display: none;
+    cursor: pointer;
+
+}
+
+.menu-button i {
+   
+}
+
+
+
+/* LE CAROUSEL DE L'ACCUEIL */
+#menuslide {
+    height: 100vh;
+}
+
+.swiper-slide h1 {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+    font-weight: 300
+
+}
+
+.swiper-slide h1 span {
+    color: #fff;
+    font-size: 3.3rem;
+}
+
+
+/* LA PARTIE INFOS */
+
+#infos {
+    margin: 30px auto;
+    min-height: 50;
+    padding: 10px 10px;
+}
+
+.infos-baguette {
+
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+   align-items: center;
+   padding: 30px;
+
+
+}
+
+.infos-texte {
+
+    padding: 20px;
+    width: 100%;
+
+}
+
+.infos-texte h1 {
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.infos-texte p {
+    font-size: 1.8rem;
+}
+
+.infos-image {
+  /* max-width: 500px;
+  max-height: 500px; */
+  
+
+}
+
+.infos-image img {
+    /* max-height: 400px; */
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    transition: 0.4s;
+}
+
+
+/* LE MENU */
+
+#menu {
+    background: url(./images/menu2.jpg) center/cover no-repeat;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#menu h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 200;
+    margin: 20px auto;
+}
+
+.buttons {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.button {
+
+    font-family: 'Cookie', cursive;
+    font-size: 1.7rem;
+    padding:3px 15px;
+    border:  1px solid #000;
+    border-radius: 5px;
+    background: none;
+    margin: 0 10px;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+
+.button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.lemenu {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    background: #fff;
+    border: 4px solid green;
+}
+
+.menu-plat {
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+    animation: fadeIn 1.6s ease-in;
+   
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+    
+}
+
+.menu-image {
+
+    padding: 10px 10px;
+
+}
+
+.menu-image img {
+    max-height: 160px;
+  border-radius: 50%;
+border: 4px solid green;
+transition: 0.5s;
+
+
+}
+.menu-image:hover img {
+    transform: scale(1.1);
+}
+
+.menu-contenu {
+    text-align: center;
+    /* max-width: 180px; */
+   
+
+}
+.menu-contenu h2 {
+    font-size: 1rem;
+
+}
+.menu-contenu h3 {
+
+}
+ .menu-contenu p {
+    font-size: 1.1rem;
+    color: green;
+
+ }
+
+
+ /* RESERVATION */
+
+ #RESERVATION {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: url(./images/menu6.jpg) center/cover no-repeat;
+ }
+
+ .contenu-reservation {
+    display: grid;
+    grid-template-columns: 27% 73%;
+    align-items: stretch;
+   
+
+    padding: 15px 15px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+ }
+
+ .horaires {
+    background: #000 ;
+    padding: 15px 15px ;
+ }
+
+ .horaire-contennu {
+    border: 1px dashed #e67e22;
+
+ }
+
+ .horaire-contennu h1 {
+    color: #e67e22;
+    margin: 40px auto 40px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+ }
+
+ .horaire-contennu h2 {
+    color: #e67e22;
+   
+    font-weight: 300;
+    text-align: center;
+    margin: 20px auto;
+ }
+
+ .horaire-contennu h3 {
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px auto;
+ }
+
+ .horaire-contennu p {
+color: #e67e22;
+text-align: center;
+margin: 50px auto;
+font-size: 1.6rem;
+ }
+
+ .horaire-contennu i {
+    color: #e67e22;
+  
+ }
+
+ .commande {
+    background: #fff;
+
+ }
+
+ .commande h1 {
+    margin: 100px auto 10px;
+    font-size: 2rem;
+ }
+ .commande i {
+    margin: 10px auto 100px;
+    color: #000;
+ }
+
+ input {
+   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 0.8rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 3px;
+    border-radius: 5px;
+    text-align: center;
+ }
+
+ .commande-submit {
+    font-family: 'Cookie', cursive;
+        font-size: 1.7rem;
+        padding: 3px 15px;
+        border: 1px solid #000;
+        border-radius: 15px;
+        background: none;
+        margin: 30px auto;
+        color: #000;
+        transition: 0.5s;
+        cursor: pointer;
+
+ }
+
+ .commande-submit:hover {
+    background: #000;
+    color: #fff;
+ }
+
+ /* POUR LA VALIDATION */
+ #VALIDATION {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+ }
+
+ .validation-contenu  {
+    text-align: center;
+    /* display: none; */
+ }
+
+ .validation-contenu h1 {
+    font-size: 2rem;
+ }
+ .validation-liste {
+    text-align: center;
+    margin: 0 auto;
+
+ }
+ .tableau-validation {
+    border: 2px solid #e67e22;
+    margin: 10px auto;
+    /* min-width: 300px; */
+     width: auto; 
+    border-radius: 10px;
+
+ }
+
+ thead tr {
+    font-family: 'Courgette', cursive;
+    font-size: 1.1rem;
+    /* font-family: 'Great Vibes', cursive; */
+ }
+
+ th, td {
+    padding: 20px 20px;
+ }
+ /* tbody {
+    text-align: center;
+ } */
+
+ tbody tr {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+ }
+  
+ .fa-trash {
+    cursor: pointer;
+    color: #e67e22;
+    text-align: center;
+ 
+ }
+
+ .fa-trash.none {
+    display: none;
+ }
+
+
+ .validation-button {
+    font-family: 'Cookie', cursive;
+        font-size: 1.7rem;
+        padding: 3px 15px;
+        border: 1px solid #000;
+        border-radius: 15px;
+        background: none;
+        margin: 20px auto;
+        color: #000;
+        transition: 0.5s;
+        cursor: pointer;
+        display: none;
+
+ }
+
+ .validation-button.block {
+    display: block;
+ }
+
+ .validation-button:hover {
+    background: #000;
+        color: #fff;
+ }
+
+
+ /* LE FOOTER */
+
+ #FOOTER {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+ }
+
+ .footer-contenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+   
+
+ }
+
+
+ .footer-infos {
+    background: #000;
+    color: #fff;
+   
+    text-align: center;
+    padding: 20px 20px;
+
+ }
+ .footer-infos h1 {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+margin-bottom: 30px;
+font-weight: 300;
+
+ }
+ .footer-infos p {
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+ }
+
+ .footer-contacte {
+    background: #333;
+    color: #fff;
+    padding: 10px 10px;
+    text-align: left;
+
+ }
+
+ .footer-contacte h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    margin: 10px auto;
+
+ }
+
+ .footer-contacte input {
+    background: none;
+    margin: 10px auto;
+    border: 1px solid #fff ;
+    width: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ .resaux {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+
+ }
+
+ .resaux h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 300;
+        margin: 10px auto;
+
+ }
+
+ .resaux ul {
+    display: flex;
+   
+ }
+ .resaux ul li {
+    margin:  0 10px;
+    list-style-type: none;
+
+ }
+ .resaux ul li i {
+    cursor: pointer;
+    transition: 0.5s;
+ }
+ .resaux ul li i:hover {
+    transform: scale(1.2);
+ }
+
+
+ /* LE MODAL */
+ .modal {
+    display:none ;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ .modal-content {
+    background-color: #fff;
+    margin: 20% auto;
+    width: 70%;
+    box-shadow: 10px 20px 40px #333;
+    animation-name: modal;
+    animation-duration: 2s;
+ }
+
+ .modal-header {
+    background: coral;
+    padding: 15px;
+    color: #fff;
+ }
+
+ .close-btn {
+    color: #fff;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+ }
+
+ .modal-header h2 {
+    margin: 0;
+    font-weight: 400;
+ }
+
+ .modal-body {
+    padding: 20px 20px;
+ }
+
+ .modal-body p {
+    font-size: 2rem;
+ }
+ @keyframes modal {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+    
+ }
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 1150px) {
+    .infos-texte h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+      .infos-texte p {
+           font-size: 1.6rem;
+         }
+
+      .infos-image img {
+         max-height: 350px;
+         border-radius: 5%;
+        
+         }
+
+         /* POUR LE MENU */
+
+         .lemenu {
+            width: 90%;
+         }
+
+    
+}
+
+@media (max-width: 1000px) {
+
+    .infos-baguette {
+    
+            display: grid;
+            grid-template-columns: 1fr ;
+            align-items: center;
+            padding: 30px;
+            text-align: center;
+    
+        }
+
+         .infos-texte h1 {
+         font-size: 1.8rem;
+         text-align: center;
+         }
+        
+         .infos-texte p {
+         font-size: 1.5rem;
+        /* text-align: justify; */
+        text-align: left;
+         }
+        
+         .infos-image {
+            width: 100%;
+           
+         }
+
+         .infos-image img {
+       max-width: 550px;
+         border-radius: 5%;
+         margin: 0 auto;
+         }
+
+                                
+     /* POUR LE MENU */
+     .lemenu {
+     display: block;
+     width: 60%;
+     }
+}
+
+@media (max-width: 960px) {
+
+    .menu-button {
+        display: block;
+    }
+
+        .menu-items {
+            display: block;
+            margin-top: 0;
+            width: 100%;
+           /* padding: 10px 0; */
+           margin: 10px 0;
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            transition: 0.3s ease-in;
+            background-color: #fff;
+
+
+        }
+
+        .menu-items.active {
+            height: 240px;
+
+        }
+        .menu-items li {
+            margin: 15px auto;
+        }
+
+        .menu-items li a {
+            color: #000;
+        }
+
+        .container {
+            display: block;
+        }
+
+         .container h1 a {
+            color: #000;
+            font-size: 1.6rem;
+         }
+
+        .nav {
+            align-items: flex-start;
+            background-color: #fff;
+        }
+
+     .swiper-slide h1 {
+        font-size: 2rem;
+
+        }
+
+        .swiper-slide h1 span {
+            font-size: 2.3rem;
+        }
+
+        /* POUR LE FOOTER */
+
+      .footer-contacte h1 {
+        font-size: 1.1rem;
+      }
+      .resaux h2 {
+        font-size: 1.1rem;
+      }
+
+      .footer-infos h1 {
+        font-size: 1.1rem;
+      }
+
+
+       
+    
+}
+
+@media (max-width: 800px) {
+
+    /* POUR LE MENU */
+
+    .lemenu {
+        width: 90%;
+    }
+    .menu-plat {
+        display: block;
+        text-align: center;
+    }
+
+    .button {
+        margin: 0 3px;
+        font-size: 1.3rem;
+    }
+
+        #menu h1 {
+            font-size: 2rem;
+        }
+
+        .menu-contenu h2 {
+            font-size: 1.3rem;
+
+        }
+
+        .menu-contenu p {
+            font-size: 1.3rem;
+        }
+
+        /* RESERVATION */
+
+        .contenu-reservation {
+            padding: 5px 5px;
+            width: 100%;
+            grid-template-columns: 35% 65%;
+        }
+
+        /* FOOTER  */
+
+        .footer-contenu {
+            grid-template-columns: 1fr;
+        }
+        .footer-contacte {
+            text-align: center;
+        }
+        .resaux {
+            grid-template-columns: 1fr;
+           justify-content: center;
+        }
+
+        .resaux ul {
+            margin: 0 auto;
+        }
+
+        .infos-baguette {
+            width: 100%;
+        }
+
+}
+
+@media (max-width: 600px) {
+
+    /* NAVBAR */
+
+    .container h1 a  {
+        font-size:1.2rem ;
+    }
+
+     .swiper-slide h1 {
+     font-size: 1.1rem;
+     }
+
+     .swiper-slide h1 {
+        font-size: 1.2rem;
+
+     }
+
+     /* LE TABLEAU */
+          th,
+          td {
+              padding: 5px 5px;
+          }
+
+          thead tr, tbody tr {
+            font-size: 1.1rem;
+          }
+
+}
+
+@media (max-width: 450px) {
+    .contenu-reservation {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+}
+
+
+

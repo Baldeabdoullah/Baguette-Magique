@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <!-- Demo styles -->
+    <style>
+   
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+    
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+    
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            position: relative;
+           text-align: center;
+        }
+
+    
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <title>Baguettes</title>
+
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <h1><a href="index.html">La Baguette Magique</a></h1>
+
+                <ul id="menuitems" class="menu-items">
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Infos</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Commande</a></li>
+                    <li><a href="">Validation</a></li>
+                    <li><a href="">Contacte</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu-button">
+        <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="image-menu" id="menuslide">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                   
+                    <img src="./images/menu9.jpg" alt="">
+                    <h1>Bienvenue à <br> <span>La Baguette Magique</span> </h1>
+                </div>
+    
+                <div class="swiper-slide">
+                    <img src="./images/menu4.jpg" alt="">
+                    <h1>Sur Place ou à Emporter</h1>
+                </div>
+    
+                <div class="swiper-slide">
+                    <img src="./images/menu1.jpg" alt="">
+                    <h1>Nous Livrons partout au Sénégal</h1>
+                </div>
+    
+            </div>
+        </div>
+    
+    </section>
+
+    <section id="infos" >
+
+        <div class="infos-baguette">
+
+            <div class="infos-texte">
+                <h1>A Propos</h1>
+                <p>Bien manger est plus q'un choix c'est tout un mode de vie. 
+                    la nourriture est le premier medicament du corps. C'est pourquoi 
+                    depuis plus de 10 ans la baguettes Magiques mets a votre dispositions des
+                    produits sains sans produits chimiques produits localement.
+                </p>
+            </div>
+
+            <div class="infos-image">
+                <img src="./images/infos.jpg" alt="">
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <section id="menu">
+
+        <h1>Decouvrez Notre Menu</h1>
+
+        <div class="buttons">
+            <button type="button" class="button" data-id="tout">Tout</button>
+            <button type="button" class="button" data-id="entre">Entrées</button>
+            <button type="button" class="button" data-id="repas">Repas</button>
+            <button type="button" class="button" data-id="dessert">Dessert</button>
+        </div>
+
+        <div class="lemenu">
+
+            <!-- item debut -->
+            <div class="menu-plat">
+                <div class="menu-image">
+                    <img src="./images/burger.jpg" alt="" srcset="">
+
+                </div>
+
+                <div class="menu-contenu">
+                   
+                    <h2>Burger</h2>
+                    <h3>Boeuf, frittes</h3>
+                    <p>1500 FCFA</p>
+
+                </div>
+
+            </div>
+
+            <!-- item-fin -->
+
+
+
+            <!-- item debut -->
+            <div class="menu-plat">
+                <div class="menu-image">
+                    <img src="./images/burger.jpg" alt="" srcset="">
+            
+                </div>
+            
+                <div class="menu-contenu">
+            
+                    <h2>Burger</h2>
+                    <h3>Boeuf, frittes</h3>
+                    <p>1500 FCFA</p>
+            
+                </div>
+            
+            </div>
+            
+            <!-- item-fin -->
+
+
+            <!-- item debut -->
+            <div class="menu-plat">
+                <div class="menu-image">
+                    <img src="./images/burger.jpg" alt="" srcset="">
+            
+                </div>
+            
+                <div class="menu-contenu">
+            
+                    <h2>Burger</h2>
+                    <h3>Boeuf, frittes</h3>
+                    <p>1500 FCFA</p>
+            
+                </div>
+            
+            </div>
+            
+            <!-- item-fin -->
+
+
+            <!-- item debut -->
+            <div class="menu-plat">
+                <div class="menu-image">
+                    <img src="./images/burger.jpg" alt="" srcset="">
+            
+                </div>
+            
+                <div class="menu-contenu">
+            
+                    <h2>Burger</h2>
+                    <h3>Boeuf, frittes</h3>
+                    <p>1500 FCFA</p>
+            
+                </div>
+            
+            </div>
+            
+            <!-- item-fin -->
+
+
+        </div>
+
+
+    </section>
+
+
+    <section id="RESERVATION">
+
+        <div class="contenu-reservation">
+
+            <div class="horaires">
+                <div class="horaire-contennu">
+                    <h1>Heures D'ouvertures</h1>
+            <i class="fa-solid fa-utensils fa-2x"></i>
+                    <h2>lundi-vendredi</h2>
+                    <h3>7h-11h</h3>
+                    <h3>14h-20h</h3>
+
+                    <h2>samedi-dimanche</h2>
+                    <h3>9h-12h</h3>
+                    <h3>14h-22h</h3>
+
+
+                    <p> +221 564 677 78</p>
+                </div>
+            </div>
+
+            <div class="commande">
+                <h1>Passez Votre Commande</h1>
+        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+
+                <form action="" id="ajoutForm">
+
+                    <div>
+                        <input type="text" id="nom" placeholder="Nom Prenom">
+
+                        <input type="number" id="numero" placeholder="Numero">
+
+                        <input type="text" id="plat" placeholder="Plat Choisis">
+
+                      <input type="number" id="quantite" placeholder="Quantité">
+
+                    </div>
+
+
+                    <div class="commandeBouton-contenu">
+                        <button type="submit" id="commande-boutton" class="commande-submit" value="submit">Ajouter</button>
+                    </div>
+
+                    
+
+                    </form>
+                    
+             </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="VALIDATION">
+        <div class="validation-contenu" id="contenu">
+            <h1>Ma Commande</h1>
+
+            <div class="validation-liste" id="listvalidation">
+                <div id="tvalidation">
+                <table class="tableau-validation" >
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Numéro</th>
+                            <th>Plat Choisit</th>
+                            <th>Quantité</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!-- <tr id="trtable">
+                          
+                           
+                            <td>Karim </td>
+                            <td>212344556 </td>
+                            <td>Menu Burger </td>
+                            <td>3 </td>
+                        </tr> -->
+                    </tbody>
+                    <!-- <i class="fa-solid fa-trash fa-2x delete"></i> -->
+                </table>
+                </div>
+                
+                <button type="button" class="validation-button" id="validbtn">Valider</button>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- LE MODAL -->
+    
+     <div class="modal" id="simplemodal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close-btn">&times;</span>
+                <h2>Message Envoyé</h2>
+            </div>
+    
+            <div class="modal-body">
+                <p>Nous vous contacterons pour confirmer votre commande</p>
+            </div>
+        </div>
+    
+    </div> 
+
+ <!-- FOOTER -->
+
+    <section id="FOOTER">
+
+        <div class="footer-contenu">
+
+            <div class="footer-infos">
+                <h1>La Baguette Magique</h1>
+                <p>Nous Sommes présants dans plusieurs ville du Sénegal
+                    et nos livrons partout.
+                </p>
+            </div>
+
+            <div class="footer-contacte">
+                <h1>Notifications</h1>
+                <input type="email" placeholder="Votre Email">
+
+                <div class="resaux">
+                    <h2>Suivez-Nous:</h2>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                    </ul>
+
+                </div>
+               
+            </div>
+
+        </div>
+
+    </section>
+
+   
+
+
+    <script src="main.js"></script>
+
+
+
+        <!-- LE SWIPPER JS -->
+        
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+
+                speed: 3000,
+
+
+                loop: true,
+
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+
+                autoplay: {
+                    delay: 4000,
+                },
+            });
+        </script>
+
+
+
+      
+</body>
+</html>
